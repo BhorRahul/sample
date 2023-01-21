@@ -1,0 +1,6 @@
+#!/bin/bash
+yum install httpd on -y
+service httpd start
+echo "bhor" >> /var/www/html/index.html
+service httpd restart
+chkconfig httpd on
